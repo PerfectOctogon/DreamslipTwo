@@ -1,0 +1,461 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.Editor.csproj": {}
+  },
+  "projects": {
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.Editor.csproj",
+        "projectName": "Unity.VisualScripting.Core.Editor",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.Editor.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj",
+        "projectName": "Unity.VisualScripting.Core",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.Editor.csproj",
+        "projectName": "Unity.VisualScripting.Flow.Editor",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.Editor.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.Editor.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.Editor.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.csproj",
+        "projectName": "Unity.VisualScripting.Flow",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Flow.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/Unity.VisualScripting.Core.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj",
+        "projectName": "UnityEditor.TestRunner",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj",
+        "projectName": "UnityEditor.UI",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.UI.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEditor.TestRunner.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj"
+              },
+              "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj": {
+                "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj",
+        "projectName": "UnityEngine.TestRunner",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.TestRunner.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj",
+        "projectName": "UnityEngine.UI",
+        "projectPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/UnityEngine.UI.csproj",
+        "packagesPath": "/home/adithya/.nuget/packages/",
+        "outputPath": "/home/adithya/Documents/UnityProjects/DREAMSLIP TWO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adithya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/var/lib/snapd/snap/dotnet-sdk/228/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
