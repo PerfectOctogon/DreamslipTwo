@@ -18,7 +18,7 @@ public class Teleporter : MonoBehaviour
             //Debug.Log("Something hit!");
             other.transform.position = placeToTeleport.position;
             other.GetComponent<CharacterController>().enabled = true;
-            other.GetComponent<Player>().TakeDamage(20);
+            other.GetComponent<Player>().Damage(20);
         }
     }
 }
