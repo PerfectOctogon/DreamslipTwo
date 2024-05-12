@@ -11,6 +11,8 @@ public class RangedEnemyAI : EnemyAI
     bool walkpointSet;
     public float walkPointRange;
 
+    private bool canAttack = true;
+
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
@@ -37,7 +39,7 @@ public class RangedEnemyAI : EnemyAI
             sightRange = alertedSightRange;
             ChasePlayer();
         }
-        if (playerInAttackRange) {
+        if (playerInAttackRange && canAttack) {
             AttackPlayer();
         }
     }
@@ -65,8 +67,11 @@ public class RangedEnemyAI : EnemyAI
         Debug.Log("Player attackable!");
         if (Physics.Raycast(projectileSpawnLocation.position, Vector3.forward, attackRange, whatIsPlayer))
         {
+            canAttack = false;
+            StartCoroutine(reload());
             Debug.Log("Attacked player!");
-            Instantiate(projectile, projectileSpawnLocation);
+            GameObject projectileObject = Instantiate(projectile, projectileSpawnLocation);
+            projectileObject.GetComponent<EnemyProjectile>().SetDirection(projectileSpawnLocation.forward);
         }
     }
 
@@ -79,5 +84,11 @@ public class RangedEnemyAI : EnemyAI
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround)) {
             walkpointSet = true;
         }
+    }
+
+    private IEnumerator reload()
+    {
+        yield return new WaitForSeconds(timeBetweenAttacks);
+        canAttack = true;
     }
 }

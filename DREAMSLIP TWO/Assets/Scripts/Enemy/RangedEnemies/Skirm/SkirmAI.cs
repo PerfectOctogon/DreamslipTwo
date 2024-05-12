@@ -5,8 +5,10 @@ using UnityEngine.AI;
 
 public class SkirmAI : RangedEnemyAI
 {
+    [SerializeField] private GameObject projectileObject;
     private void Awake()
     {
+        projectile = projectileObject;
         health = maxHealth;
         if (player == null)
         {

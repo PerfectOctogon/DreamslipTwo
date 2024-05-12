@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,11 @@ public class EnemyProjectile : MonoBehaviour
         moveDirection = direction.normalized;
     }
 
+    private void Awake()
+    {
+        
+    }
+
     private void Update()
     {
         timer += Time.deltaTime;
@@ -38,8 +44,8 @@ public class EnemyProjectile : MonoBehaviour
             //print(hit.collider.name);
             if (hit.collider.gameObject.CompareTag("Player")) { hit.collider.gameObject.GetComponent<Player>().Damage(explosionDamage); print("Explosion!"); }
         }
-        if (other.CompareTag("Enemy")) {
-            other.gameObject.GetComponent<EnemyAI>().Damage(damage);
+        if (other.CompareTag("Player")) {
+            other.gameObject.GetComponent<Player>().Damage(damage);
         }
         DestroyBullet(transform.position);
     }

@@ -3,8 +3,10 @@ using UnityEngine.AI;
 
 public class WendigoAI : MeleeEnemyAI
 {
+    
     private void Awake()
     {
+        
         health = maxHealth;
         if (player == null)
         {
