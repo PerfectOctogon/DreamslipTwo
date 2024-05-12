@@ -8,6 +8,7 @@ public class SkirmAI : RangedEnemyAI
     [SerializeField] private GameObject projectileObject;
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         projectile = projectileObject;
         health = maxHealth;
         if (player == null)

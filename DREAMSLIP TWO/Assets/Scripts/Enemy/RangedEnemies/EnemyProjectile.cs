@@ -11,18 +11,13 @@ public class EnemyProjectile : MonoBehaviour
     public float bulletExposionRange = 5f;
     private bool hit = false;
     float timer = 0;
-    float damage;
+    float damage = 5;
     float explosionDamage;
     public GameObject blasterShotEffect;
     public LayerMask enemyLayer;
     public void SetDirection(Vector3 direction)
     {
         moveDirection = direction.normalized;
-    }
-
-    private void Awake()
-    {
-        
     }
 
     private void Update()

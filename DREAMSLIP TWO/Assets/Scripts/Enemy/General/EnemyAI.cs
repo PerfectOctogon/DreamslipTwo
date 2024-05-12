@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class EnemyAI : MonoBehaviour, Damageable
 {
@@ -44,5 +45,17 @@ public class EnemyAI : MonoBehaviour, Damageable
     protected IEnumerator WaitDestroy(float waitTime) {
         yield return new WaitForSeconds(waitTime);
         Destroy(gameObject);
+    }
+
+    protected float CalculateHitDamage()
+    {
+        float damage = Random.Range(minDamage, maxDamage);
+        float critAchieve = Random.Range(0, 10);
+        if (critAchieve / 10 <= critChance)
+        {
+            damage *= critMultiplier;
+        }
+
+        return damage;
     }
 }

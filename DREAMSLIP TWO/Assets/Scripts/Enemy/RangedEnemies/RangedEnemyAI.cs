@@ -64,14 +64,12 @@ public class RangedEnemyAI : EnemyAI
 
     protected void AttackPlayer()
     {
-        Debug.Log("Player attackable!");
-        if (Physics.Raycast(projectileSpawnLocation.position, Vector3.forward, attackRange, whatIsPlayer))
+        animator.SetBool("isWalking", false);
+        agent.speed = 0;
+        transform.LookAt(player);
+        if (true/*Physics.Raycast(projectileSpawnLocation.position, Vector3.forward, attackRange, whatIsPlayer)*/)
         {
-            canAttack = false;
-            StartCoroutine(reload());
-            Debug.Log("Attacked player!");
-            GameObject projectileObject = Instantiate(projectile, projectileSpawnLocation);
-            projectileObject.GetComponent<EnemyProjectile>().SetDirection(projectileSpawnLocation.forward);
+            StartCoroutine(Attack());
         }
     }
 
@@ -86,8 +84,15 @@ public class RangedEnemyAI : EnemyAI
         }
     }
 
-    private IEnumerator reload()
+    private IEnumerator Attack()
     {
+        canAttack = false;
+        animator.SetTrigger("Shoot");
+        yield return new WaitForSeconds(1.6f);
+        GameObject projectileObject = Instantiate(projectile, projectileSpawnLocation.position, Quaternion.identity);
+        projectileObject.GetComponent<EnemyProjectile>().SetBulletDamage(CalculateHitDamage());
+        projectileObject.GetComponent<EnemyProjectile>().SetDirection(projectileSpawnLocation.forward);
+        agent.speed = 3.5f;
         yield return new WaitForSeconds(timeBetweenAttacks);
         canAttack = true;
     }

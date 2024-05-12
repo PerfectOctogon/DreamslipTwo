@@ -70,9 +70,7 @@ public class MeleeEnemyAI : EnemyAI
     IEnumerator TryDamagePlayer() {
         yield return new WaitForSeconds(0.5f);
         if (Physics.CheckSphere(transform.position, attackRange, whatIsPlayer)) {
-            float damage = Random.Range(minDamage, maxDamage);
-            if(Random.Range(0, 1f) <= critChance) { damage *= critMultiplier; }
-            playerScript.Damage(damage);
+            playerScript.Damage(CalculateHitDamage());
         }
         yield return new WaitForSeconds(timeBetweenAttacks);
         alreadyAttacked = false;
