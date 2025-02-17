@@ -21,7 +21,7 @@ public class DialogueTrigger : MonoBehaviour
             else
             {
                 StartCoroutine(dialogueSystem.sayWaitDisable(dialogueText));
-                Destroy(gameObject);
+                isActive = true;
             }
         }
     }

@@ -5,9 +5,7 @@ using UnityEngine.AI;
 
 public class SpectreCoreAI : EnemyAI
 {
-    private Transform player;
-    //private Player playerScript;
-
+    
     public float shootingRange;
     public float selfDestructRange;
     public float timeBetweenAttacks;

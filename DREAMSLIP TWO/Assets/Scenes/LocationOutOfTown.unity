@@ -20123,6 +20123,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 1154368957}
+    - target: {fileID: 6672074303767356969, guid: d51a73fe73f37ac3e9e017f185cfd247, type: 3}
+      propertyPath: timeBetweenDialogue
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

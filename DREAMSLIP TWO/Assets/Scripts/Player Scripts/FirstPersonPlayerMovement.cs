@@ -9,7 +9,7 @@ public class FirstPersonPlayerMovement : MonoBehaviour
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
-    public float teleportDistance = 5f;
+    public float teleportDistance = 8f;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -19,6 +19,7 @@ public class FirstPersonPlayerMovement : MonoBehaviour
     bool isGrounded;
     bool canDoubleJump = true;
     bool canDash = true;
+    bool isDashing = false;
 
     private AudioSource playerAudio;
     public AudioClip teleportSound;
@@ -40,12 +41,18 @@ public class FirstPersonPlayerMovement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-
+        
         Vector3 move = transform.right * x + transform.forward * z;
-        characterController.Move(move *  speed * Time.deltaTime);
+        if (!isDashing)
+        {
+            characterController.Move(move * speed * Time.deltaTime);
+        }
 
         velocity.y += gravity * Time.deltaTime;
-        characterController.Move(velocity * Time.deltaTime);
+        if (!isDashing)
+        {
+            characterController.Move(velocity * Time.deltaTime);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || (!isGrounded && canDoubleJump))){
             if (!isGrounded && canDoubleJump)
@@ -70,7 +77,9 @@ public class FirstPersonPlayerMovement : MonoBehaviour
     private IEnumerator TeleportDash() {
         if (canDash)
         {
+            isDashing = true;
             canDash = false;
+            characterController.enabled = false;
             Vector3 inputDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")).normalized;
             Vector3 rotatedDirection = transform.rotation * inputDirection;
 
@@ -88,6 +97,8 @@ public class FirstPersonPlayerMovement : MonoBehaviour
             }
             playerAudio.clip = teleportSound;
             playerAudio.Play();
+            isDashing = false;
+            characterController.enabled = true;
             yield return new WaitForSeconds(1.5f);
             canDash = true;
         }

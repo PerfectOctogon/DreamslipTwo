@@ -25,7 +25,11 @@ public class EnemyAI : MonoBehaviour, Damageable
         print("Hit");
         health -= damage;
         healthBarUpdater.UpdateHealthBar();
-        if (health <= 0 && !isDead) Die();
+        if (health <= 0 && !isDead)
+        {
+            StopAllCoroutines();
+            Die();
+        }
     }
 
     public void Heal(float healthIncrease)
